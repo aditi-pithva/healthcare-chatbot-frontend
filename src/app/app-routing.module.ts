@@ -4,8 +4,8 @@ import { ChatComponent } from './chat/chat.component';
 
 const routes: Routes = [
   { path: 'home', component: ChatComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect root to /home
-  { path: '**', redirectTo: '/home' }, // Redirect unknown paths to /home
+  { path: '', component: ChatComponent }, // Redirect root to /home
+  { path: '**', component: ChatComponent }, // Redirect unknown paths to /home
 ];
 
 @NgModule({
